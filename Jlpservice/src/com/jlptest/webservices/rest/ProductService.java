@@ -37,6 +37,7 @@ public static final String POUND = "\u00A3";
 public static final String SHOWWASNOW = "ShowWasNow";
 public static final String SHOWWASTHENNOW = "ShowWasThenNow";
 public static final String SHOPERCDSCOUNT = "ShowPercDscount";
+public final static Color purple = new Color(128,0,128);
 
 @GET 
 @Path("/productDetails") 
@@ -221,6 +222,9 @@ static Color getColor(String col) {
         break;
     case "white":
         color = Color.WHITE;
+        break;
+    case "purple":
+        color = purple;
         break;
     default :
     	return null;
